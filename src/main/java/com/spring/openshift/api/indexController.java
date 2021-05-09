@@ -4,18 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 @Controller
-public class calcController {
+public class indexController {
 	
-	@RequestMapping("calc")	
-	public String calc()
-	{
-		return "calc.jsp";
+	
+	 @RequestMapping("/")
+	public String welcome() {
+		return "Welcome to Calculator <a href='/calc'>Calculator</a>";
 	}
-	
-	
-	
-	
 
 }

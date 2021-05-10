@@ -18,11 +18,7 @@ public class CalculatorApplication {
 			return "Welcome to Calculator <a href='/calc'>Calculator</a>";
 		}
 	
-	@GetMapping("/{input}")
-	public String welcomeMsg(@PathVariable String input) {
-		return "Hi "+input+" Your Application Deployed successfully... ";
-	}
-
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(CalculatorApplication.class, args);
